@@ -3,12 +3,14 @@ import bg from "../../../public/bg.webp";
 
 export default function SpaceBackground() {
   return (
-    <div className="absolute w-full opacity-50 max-h-[125vh] mt-[-24rem] h-[1800px]">
-      <Image
-        src={bg}
-        className="absolute w-full object-cover object-top max-h-[125vh]"
-        alt=""
-      ></Image>
+    <div className="absolute inset-0 -mt-96 h-[1800px] w-full overflow-hidden z-0 pointer-events-none opacity-50 max-h-[125vh]">
+      <span>
+        <Image
+          src={bg}
+          className="absolute w-full object-cover object-[top_center] max-h-[125vh] m-auto p-0 top-0 bottom-0 w-0 h-0 min-w-full min-h-full max-w-full min-w-full"
+          alt=""
+        ></Image>
+      </span>
       <div className="absolute left-0 right-0 bottom-0 h-[600px] bg-gradient-to-t from-[#041417] pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 right-0 h-96 bg-gradient-to-t from-[#041417] pointer-events-none"></div>
       <div

@@ -42,11 +42,11 @@ body {
 .meteor::before {
   content: "";
   position: absolute;
+  z-index: 0;
   width: 4px;
   height: 5px;
   border-radius: 50%;
   margin-top: -2px;
-  background: rgba(#fff, 0.7);
   box-shadow: 0 0 15px 3px #fff;
 }
 
@@ -71,7 +71,7 @@ body {
 
 .clip-background {
   background-size: 250% auto;
-  background-position: 50% 72%;
+  background-position: 50% 30%;
 }
 
 .above-menu-banner {
