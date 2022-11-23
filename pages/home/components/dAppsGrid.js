@@ -10,7 +10,7 @@ export default function DAppsGrid({ dApps }) {
   }
   return (
     <div className="grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 md:gap-4 gap-2">
-      {(dApps = []).map((dApp, index) => {
+      {dApps && dApps.map((dApp, index) => {
         return (
           <div className={getStyle(dApp["status"])} key={index}>
             <div className="w-14 h-14">
