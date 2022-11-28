@@ -1,4 +1,4 @@
-export default function TopMenuBanner() {
+export default function AboveMenuBanner() {
   return (
     <div className="above-menu-banner">
       <a href="https://aurora.plus" className="flex items-center justify-center flex-1 px-3 font-medium text-black group">

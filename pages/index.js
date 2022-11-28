@@ -1,5 +1,5 @@
 import axios from "axios";
-import TopMenuBanner from "./home/components/topMenuBanner";
+import AboveMenuBanner from "./home/components/aboveMenuBanner";
 import Header from "./home/components/header";
 import HeroSection from "./home/components/heroSection";
 import DAppsGrid from "./home/components/dAppsGrid";
@@ -35,7 +35,7 @@ export default function Home({ dAppsProps }) {
   return (
     <div>
       <SpaceBackground />
-      <TopMenuBanner />
+      <AboveMenuBanner />
       <Header />
       <main className="flex flex-col flex-1 w-full mb-10">
         <div className="container w-full max-w-6xl px-5 md:px-10 mx-auto">
@@ -46,11 +46,12 @@ export default function Home({ dAppsProps }) {
     </div>
   );
 }
+
 export async function getStaticProps(context) {
   const search = await onSearch();
   return {
     props: {
       dAppsProps: search,
-    }, // will be passed to the page component as props
+    },
   };
 }
