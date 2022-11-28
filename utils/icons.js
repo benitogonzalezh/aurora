@@ -407,7 +407,6 @@ const icons = {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 20 20"
       fill="currentColor"
-      className="w-6 h-6 text-white opacity-50 fill-current peer hover:opacity-100 transition-opacity"
     >
       <path
         fillRule="evenodd"
