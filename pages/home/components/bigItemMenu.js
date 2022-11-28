@@ -5,7 +5,9 @@ function BigItemMenu({ icon, title, subtitle }) {
   return (
     <Link href="https://doc.aurora.dev" className="flex items-start group">
       <div className="w-10 h-10 -mt-px rounded-full bg-white bg-opacity-[0.15] flex items-center justify-center mr-3 group-hover:bg-opacity-30">
-        <span>{icons[icon]}</span>
+        <div className="flex-shrink-0 w-5 h-5 mt-px text-white justify-center items-center flex">
+          {icons[icon]}
+        </div>
       </div>
       <div>
         <div className="flex items-center text-white">
